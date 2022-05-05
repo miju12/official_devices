@@ -1,13 +1,13 @@
 {
   "response": [
         {
-            "datetime":1630767071,
-            "filename": "sweet",
-            "id": "84c3c227787461b7b2d70439102260a8",
-            "romtype": "sweet",
+            "datetime"1651733038,
+            "filename": "CandyRoms-TwelveL-sweet-OFFICIAL-20220505-0645.zip",
+            "id": "981e3b0a7c0ed0f975a3d8964c48f70da31a37d8523e0704edac02ea5798bfc4",
+            "romtype": "Official",
             "url": "https://sourceforge.net/projects/CandyRoms/files/Official/eleven/sweet/sweet",
-            "size":2152854973,
-            "version": "sweet.sweet"
+            "size":1717947438,
+            "version": "12.1"
         }
     ]
 }
