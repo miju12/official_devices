@@ -14,12 +14,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit common LineageOS configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+#$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 # Inherit device configurations
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
+$(call inherit-product, vendor/gms/gms_pico.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := sky
