@@ -20,7 +20,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
-$(call inherit-product, vendor/gms/gms_pico.mk)
+#$(call inherit-product, vendor/gms/gms_pico.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := sky

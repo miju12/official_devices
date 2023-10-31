@@ -351,6 +351,8 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.default \
     init.class_main.sh \
+    init.kernel.post_boot \
+    init.sky.perf.rc \
     init.sky.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
@@ -365,10 +367,7 @@ PRODUCT_PACKAGES += \
 # RRO Overlays
 PRODUCT_PACKAGES += \
     CarrierConfig \
-    FrameworksResCommon \
-    FrameworksResTarget \
     SettingsResCommon \
-    SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
     WifiResTarget
