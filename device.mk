@@ -246,6 +246,10 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+#Init
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/bin/init.kernel.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot.sh \
+    $(DEVICE_PATH)/rootdir/etc/init.sky.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sky.perf.rc \
 # Input
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
@@ -351,8 +355,6 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.default \
     init.class_main.sh \
-    init.kernel.post_boot \
-    init.sky.perf.rc \
     init.sky.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
@@ -363,6 +365,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     ueventd-odm.rc \
     init.recovery.qcom.rc
+
+
 
 # RRO Overlays
 PRODUCT_PACKAGES += \

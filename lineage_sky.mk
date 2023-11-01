@@ -21,13 +21,18 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 #$(call inherit-product, vendor/gms/gms_pico.mk)
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := sky
 PRODUCT_NAME := lineage_sky
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 23076RN4BI
-PRODUCT_MANUFACTURER := Xiaomi
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRIVATE_BUILD_DESC="sky-user 12 TKQ1.221114.001 V14.0.5.0.TMWINXM release-keys"
+
+BUILD_FINGERPRINT := Redmi/sky/sky:12/TKQ1.221114.001/V14.0.5.0.TMWINXM:user/release-keys
